@@ -144,11 +144,35 @@ git push <remote> <branch>
 Stretch Questions
 
 1. What is the difference between an inline element and a block element?
+Inline elements only takes up as much width as needed with the line
+while block elements always starts on a new line and takes up the full width available.
+
 2. What happens when an element is positioned absolutely? 
-3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+It is positioned relatively to the nearest position ancerstor. 
+If it has no positioned ancestor, it uses the document body and moves along the page scrolling.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+display: inline
+
 4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+Block
+<header>
+<section>
+<footer>
+
+Inline
+<a>
+<span>
+
+Inline-Block
+<button>
+
 5. In your own words, explain the box model. What is the fix for the box model? 
+Box model is defined by the space, line and content elements in relation to the margin, the border, the padding and the content. 
+They determine how every element is rendered in a web page as far as deminsions.
 
-
-
--->
+The fix for the box model is by setting the margin and padding to 0 
+and changing the box-sizing to border-box.
+margin: 0;
+padding: 0;
+box-sizing: border-box;
