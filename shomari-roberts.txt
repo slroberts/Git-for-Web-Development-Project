@@ -25,43 +25,121 @@ Information related to the document such as <title>, <meta>, <style>, <link>, <s
 An id is an attribute that defines a unique identifier for an HTML element.
 
 8. What elements can I add an id to?
-We can pretty much add an id to a various number of HTMl elements like 
-<body>, <header>, <nav>, <div>, <form> etc. except for <html>, <head>, <title>, 
-<meta>, <style>, <link>, <script>, and other <head> related elements.
+A id attribute can be used on any HTML element.
 
 9. How many times can I use the same id on a page?
 Once.
 
 10. What is a class? 
-A class is an attribute that 
+A class is an attribute in HTML that defines one or more class names for an HTML element.
 
 11. What elements can I add a class to? 
-12. How many times can I use the same class on a page? 
+A class attribute can be used on any HTML element.
+
+12. How many times can I use the same class on a page?
+As much as I see fit. There is no techinical limit.
+
 13. How do I get my link to open in a new tab?
+Use the target attribute on the <a> tag with the value of "_blank" 
+ex. <a href="#" target="_blank">My Link</a>.
+
 14. What is the alt attribute used for? 
+the alt attribute is used to specify an alternate text for an image.
+It is useful because it adds accessibility to your website, in a case where 
+the image cannot be shown or if the user uses a screen reader.
+
 15. How do I reference an id?
-16. What is the difference between a section and a div
+You reference an id with the "#" symbol followed by the id-name. ex. "#id-name"
+
+16. What is the difference between a section and a div?
+A <section> is semantic HTML meaning that <section> defines a section in the document 
+where a div is generic with no semantic purpose.
+
 17. What is CSS used for? 
+CSS used to define styles for webpages.
+
 18. How to we select an element? Example - every h2 on the page
+We select an element by calling the selector name in the CSS document.
+
 19. What is the difference between a class and an id? - Give me an example of when I might use each one
+A class can be used to indentify multipe elements in an HTML document while an id can only be used to indentify on element in the HTML document.
+An example of when I might use a class would be to indentify elements in my HTML document that all have the same style ex width, height, border etc.
+An example of when I might use an id would be to describe a unique element in my HTML document
+
 20. How do we select classes in CSS?
+You select a class with the "." symbol followed by the class-name. ex. ".class-name"
+
 21. How do we select a p element with a single class of “human””?
+We can use the class .human or more specific we can use p.human.
+
 22. What is a parent child selector? When would this be useful? 
+A parent child selector would be "parent > child". 
+To select all elements that are a direct child of the parent element.
+
 23. How do you select all links within a div with the class of sidebar?
+You can select all links using div.sidebar > a.
+
 24. What is a pseudo selector?
+A pseudo selector is a keyword added to a selector that specifies a 
+special state of selected elements. For ex. :hover.
+
 25. What do we use the change the spacing between lines?
+We use line-height.
+
 26. What do we use to change the spacing between letters?
+We use letter-spacing.
+
 27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+We use text-transform.
+
 28. How do I add a 1px border around my div that is dotted and black?
+Shorthand - border: dotted 1px black; 
+Longhand - 
+border-style: dotted;
+border-width: 1px;
+border-color: black;
+
 29. How do I select everything on the page? 
+With the * selector.
+
 30. How do I write a comment in CSS?
+/* Comment */
+
 31. How do I find out what file I am in, when I am using the command line? 
+pwd
+
 32. Using the command line - how do I see a list of files/folders in my current folder?
-33. How do I remove a file via the command line? Why do I have to be careful with this? 
+ls
+
+33. How do I remove a file via the command line? Why do I have to be careful with this?
+rm <file> 
+Because it gets deleted immediately without a warning or confirmation.
+
 34. Why should I use version control? 
+To keep track every individual change by each contributor to prevent 
+conflicts with work such are overwriting master code.
+
 35. How often should I commit to github?
-36. What is the command we would use to push our repo up to github? 
+Regularly, to keep track of changes to the code. 
+So that in the event that bugs break the code you can revert back to an earlier version.
+
+36. What is the command we would use to push our repo up to github?
+git push <remote> <branch>
+
 37. Walk me through Lambda's git flow. 
+- fork repo
+- add TL as collaborator
+- cd into Lambda projects folder
+- clone repo
+- create branch under my-name
+- switch to my-name branch
+- get status
+- add changes to stage
+- commit with a meaningful message
+- push changes to my name branch
+- compare changes to master branch
+- create pull request and add TL as reviewer
+
 
 Stretch Questions
 
